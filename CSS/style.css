@@ -18,6 +18,11 @@
 .area-item {
 font-size: 2vw;
 }
+img {
+    width: 100%;
+    height: 100%;
+}
+/*Menu selection*/
 .area-item-1 {
     grid-area:logo;
 }
@@ -27,54 +32,6 @@ font-size: 2vw;
 .area-item-3 {
     grid-area: menu3;
 }
-.area-item-4 {
-    grid-area: banner;
-}
-.area-item-5 {
-    grid-area: promo1;
-}
-.area-item-6 {
-    grid-area: promo2;
-}
-.area-item-7 {
-    grid-area: promo3;
-}
-.area-item-8 {
-    grid-area: promo4;
-}
-.area-item-9 {
-    grid-area: promo5;
-}
-.area-item-10 {
-    grid-area: advantages;
-}
-.area-item-11 {
-    grid-area: form;
-}
-.area-item-12 {
-    grid-area: review1;
-}
-.area-item-13 {
-    grid-area: review2;
-}
-.area-item-14 {
-    grid-area: review3;
-}
-.area-item-15 {
-    grid-area: review4;
-}
-.area-item-16 {
-    grid-area: review5;
-}
-.area-item-17 {
-    grid-area: footer;
-}
-img {
-    width: 100%;
-    height: 100%;
-}
-/*Menu selection*/
-
 .area-item-1 img {
     width: 7vw;
     height:5vw;
@@ -97,8 +54,12 @@ img {
     border-right: solid .5vw  rgb(222, 3, 123);
     padding-right:1vw;
     }
+    
 
 /*Banner selection*/
+.area-item-4 {
+    grid-area: banner;
+}
 
 .banner-text {
     grid-column: 4/7;
@@ -120,6 +81,71 @@ img {
     font-weight: 500;
     font-family: 'Caveat', cursive, Times, serif;
     }
+
+h3 {
+    grid-column: 3/6;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 2vw;
+}
+
+/*Gadgets Selection*/
+.area-item-5 {
+    grid-area: promo1;
+}
+.area-item-6 {
+    grid-area: promo2;
+}
+.area-item-7 {
+    grid-area: promo3;
+}
+.area-item-8 {
+    grid-area: promo4;
+}
+.area-item-9 {
+    grid-area: promo5;
+}
+.area-item-10 {
+    grid-area: advantages;
+}
+.area-container div:nth-of-type(n+5):nth-of-type(-n+9) {
+    border: solid .5vw rgba(235, 233, 233, 0)
+}
+.area-container div:nth-of-type(n+5):nth-of-type(-n+9):hover
+{
+border-bottom: solid .5vw rgb(255, 234, 9);
+cursor: pointer;
+}
+
+
+/*Advantages Selection*/
+.area-item-11 {
+    grid-area: form;
+}
+.area-item-12 {
+    grid-area: review1;
+}
+.area-item-13 {
+    grid-area: review2;
+}
+.area-item-14 {
+    grid-area: review3;
+}
+.area-item-15 {
+    grid-area: review4;
+}
+.area-item-16 {
+    grid-area: review5;
+}
+.area-item-17 {
+    grid-area: footer;
+}
+
+
+
+
+
 
     /*Gadgets Selection*/
 .area-item-5, .area-item-6, .area-item-7, .area-item-8, .area-item-9 {
