@@ -106,9 +106,6 @@ h3 {
 .area-item-9 {
     grid-area: promo5;
 }
-.area-item-10 {
-    grid-area: advantages;
-}
 .area-container div:nth-of-type(n+5):nth-of-type(-n+9) {
     border: solid .5vw rgba(235, 233, 233, 0)
 }
@@ -120,9 +117,88 @@ cursor: pointer;
 
 
 /*Advantages Selection*/
+.area-item-10 {
+    grid-area: advantages;
+    display:flex;
+  
+}
+
+.discount-advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#FFB722;
+    width: 25%;
+    padding: 2vw 0 2vw 0;
+    flex-shrink: 0;
+    }
+
+.discount-advantages i {
+    color:#ed38d5;
+}
+    
+.discount-advantages i:hover{
+    cursor: pointer;
+    color:#f268d4;
+    }
+
+.discount-advantages span {
+    font-size: 1vw;
+}
+.discount-advantages span:hover {
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    text-align: center;
+}
+.discount-card {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-color: #ED673F;
+    }
+.discount-card span:nth-of-type(1) {
+    font-size: 3vw;
+    color: whitesmoke;
+    opacity: 75%;
+    text-align: center;
+    padding-top:0.9vw;
+}
+.discount-card span:nth-of-type(2) {
+    font-size: 2vw;
+    font-style: italic;
+    text-align: right;
+}
+
+.discount-card img:nth-of-type(1) {
+    width: 25vw;
+    height: 1vw;
+    align-self:flex-end;
+}
+.discount-card img:nth-of-type(2) {
+    margin-top: 8vw;
+    margin-left: 11vw;
+    transform: rotate(40deg);
+    width: 24vw;
+    height: 16vw;
+    box-shadow: 23px 15px 34px -12px rgba(0,0,0,0.71);
+}
+.discount-card:hover img:nth-of-type(2) {
+    transform: scale(1.1) rotate(40deg);
+    box-shadow:17px 10px 42px 11px rgba(237,235,69,0.68);
+}
+
+
+
+
+/*Form Selection*/
+
 .area-item-11 {
     grid-area: form;
 }
+
+/*Reviews Selection*/
+
 .area-item-12 {
     grid-area: review1;
 }
@@ -142,16 +218,3 @@ cursor: pointer;
     grid-area: footer;
 }
 
-
-
-
-
-
-    /*Gadgets Selection*/
-.area-item-5, .area-item-6, .area-item-7, .area-item-8, .area-item-9 {
-    border-bottom: solid .5vw rgba(255, 255, 255, 0);}
-
-.area-item-5:hover, .area-item-6:hover, .area-item-7:hover, .area-item-8:hover, .area-item-9:hover {
-    border-bottom: solid .5vw rgb(255, 234, 9);
-    cursor: pointer;
-    }
