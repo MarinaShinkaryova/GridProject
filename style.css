@@ -226,7 +226,13 @@ input[type="submit"]{
     font-size: 1.6vw;
     background-color: #C5D5EB
 }
+input[type="email"]:hover{
+    border:solid 0.1vw #1E90FF;
+} 
 
+input[type="text"]:hover{
+    border:solid 0.1vw #1E90FF;
+}
 input[type="submit"]:hover{
     transform: scale(1.1);
     cursor: pointer;
