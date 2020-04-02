@@ -248,11 +248,21 @@ span.checkbox {
     position: relative;
     overflow: hidden;
     border-radius:0.5vw;
-    
-}
-
-.area-container div:nth-of-type(n+12):nth-of-type(-n+16):hover {
+    z-index: 0;
+    }
+.lorem ::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     background: linear-gradient(to bottom, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+    z-index: -1;
+    transform: translate(0%, 100%);
+}
+.lorem:hover ::after {
+    animation: slow-fill 4s forwards;
 }
 
 .lorem span:nth-child(1) {
@@ -287,7 +297,29 @@ span.checkbox {
 .area-item-16 {
     grid-area: review5;
 }
+
+
+@keyframes slow-fill {
+    0% {
+    transform: translate(0%, 100%);
+    }
+    60% {
+    transform: scale(3)
+    }
+    100% {
+    transform: translate(0%, 0%);
+    opacity: 0.7;
+    }
+    }     
+
+/*Footer*/
+
 .area-item-17 {
     grid-area: footer;
 }
-
+.area-container div:nth-of-type(17){
+    background-color: lightslategray;
+    text-align: center;
+    padding-top: 1.5vw;
+    font-size: 1.7vw;
+}
