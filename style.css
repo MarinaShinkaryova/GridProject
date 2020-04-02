@@ -38,7 +38,7 @@ img {
     margin-bottom: 2vw;
 }
 .area-item-1:hover img {
-    content:url(../images/logo-hover.png);
+    content:url(images/logo-hover.png);
     cursor:pointer;
 } 
 
